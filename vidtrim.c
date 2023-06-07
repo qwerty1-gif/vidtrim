@@ -1,5 +1,5 @@
 //ben imwald
-//5/21/2023
+//updated 6/7/2023
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -60,7 +60,7 @@ int main(int argc, char *argv[]) {
     sprintf(temp, "%s%f", executecommand, duration);
     strcpy(executecommand, temp);
 
-    strcat(executecommand, " -c:v copy -c:a copy 'trim ");
+    strcat(executecommand, " -c:v copy -c:a copy -c:s mov_text 'trim ");
     strcat(executecommand, filename + 1); //does recopy the ' character
     printf("%s\n", executecommand);
 
